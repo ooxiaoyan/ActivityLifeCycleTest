@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button startNormalActivity = findViewById(R.id.start_normal_activity);
         Button startDialogActivity = findViewById(R.id.start_dialog_activity);
-        startDialogActivity.setOnClickListener(new View.OnClickListener() {
+        startNormalActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, NormalActivity.class);
